@@ -87,9 +87,20 @@ public class LOGIN {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement Submit = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\"Submit\"]")));
         Submit.click();
-        Thread.sleep(10000);
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//*[contains(text(), 'Loading')]")));
 
 
     }
+ // .....................................................................................................
+
+ 	@Test(priority = 5)
+ 	public void Remove_PouP() throws InterruptedException {
+
+ 		WebElement PopUp = driver.findElement(By.xpath("(//*[@title=\"Close message\"])"));
+ 		PopUp.click();
+ 		Thread.sleep(1000);
+
+ 	}
+ 
 
 }

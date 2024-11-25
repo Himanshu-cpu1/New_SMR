@@ -250,7 +250,7 @@ public class Cross_sell_Intrest_cost {
 		WebElement Yes3 = driver.findElement(By.xpath("//*[@id=\"tableId\"]/tbody/tr[1]/td[21]"));
 		WebElement CCP_Hydro2 = driver.findElement(By.xpath("//*[@id=\"tableId\"]/tbody/tr[1]/td[22]"));
 		WebElement CCP_Fuel2 = driver.findElement(By.xpath("//*[@id=\"tableId\"]/tbody/tr[1]/td[23]"));
-		WebElement CCP_Plus2 = driver.findElement(By.xpath("//*[@id=\"tableId\"]/tbody/tr[1]/td[2]"));
+		WebElement CCP_Plus2 = driver.findElement(By.xpath("//*[@id=\"tableId\"]/tbody/tr[1]/td[24]"));
 
 		Thread.sleep(4000);
 

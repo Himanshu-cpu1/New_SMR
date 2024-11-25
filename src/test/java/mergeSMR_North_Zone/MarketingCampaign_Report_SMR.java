@@ -16,6 +16,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -1596,4 +1597,12 @@ public class MarketingCampaign_Report_SMR {
     }
 //...................................................................................................	
 
+    //.....................................................................................................
+
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();  // Close the browser and end the WebDriver session
+        }
+    }
 }

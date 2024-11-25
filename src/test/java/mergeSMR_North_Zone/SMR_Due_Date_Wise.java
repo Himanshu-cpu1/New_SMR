@@ -103,17 +103,11 @@ public class SMR_Due_Date_Wise extends LOGIN {
         this.driver = LOGIN.driver;
     }
 
-
     //................................................................................................
     //..................................................................................................
     @Test(priority = 5)
     public void Click_On_Report() throws InterruptedException {
-        Thread.sleep(3000);
-        //close the pop up message first
-		 WebElement PopUp= driver.findElement(By.xpath("(//*[@title=\"Close message\"])"));
-		 PopUp.click();
-	    Thread.sleep(3000);
-	    
+       	    
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement report = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\"Reports \"]")));
         report.click();
@@ -121,7 +115,6 @@ public class SMR_Due_Date_Wise extends LOGIN {
 
     }
 
-    //..............................................................................................................
     //..................................................................................................
     @Test(priority = 6)
     public void Click_On_The_SMR_Due_date_Wise() throws InterruptedException {
@@ -138,8 +131,8 @@ public class SMR_Due_Date_Wise extends LOGIN {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         // Click on the calendar to open date picker
-        WebElement select = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[alt=\"calendar\"]")));
-        select.click();
+        WebElement Calender = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[alt=\"calendar\"]")));
+        Calender.click();
         Thread.sleep(4000);
 
         // Select start date (1st of the current month)
@@ -369,7 +362,6 @@ public class SMR_Due_Date_Wise extends LOGIN {
 
     //..........................................................................................................
 
-
     @Test(priority = 10)
     public void Day_Wise() throws InterruptedException {
         Thread.sleep(7000);
@@ -509,7 +501,6 @@ public class SMR_Due_Date_Wise extends LOGIN {
 
     @Test(priority = 12)
     public void Compare_TotalDue_Column_ZoneRegionWise_With_DealerParentWise() throws InterruptedException {
-
 
         Assert.assertEquals(d1, z1);
     }
@@ -1565,5 +1556,3 @@ public class SMR_Due_Date_Wise extends LOGIN {
 
 }
 				    
-
-

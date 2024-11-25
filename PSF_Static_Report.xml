@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PSf_Static_Report_and_Call_Dispostion_And_All_Call_Dispostion">
+	<listeners>
+    <listener class-name="PSf_Static_Report_and_Call_Dispostion.ExtentReportListener"/>
+  </listeners>
+  <test name="PSF">
+    <classes>
+      <class name="PSf_Static_Report_and_Call_Dispostion.Prelimnary_NPS_report"/>
+     
+      <class name="PSf_Static_Report_and_Call_Dispostion.Allocation_Rule_Log"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.Complaint_Report"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Last_Attempt_Report"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.PRF_Report"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Calibration_Report"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Due_Analysis"/>
+     
+      <class name="PSf_Static_Report_and_Call_Dispostion.Psf_All_Fillter_Check"/>      
+      <class name="PSf_Static_Report_and_Call_Dispostion.Call_me_Later_for_Service_Rating"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.Call_Me_Later"/>     
+      <class name="PSf_Static_Report_and_Call_Dispostion.Not_Intrested_In_Providing_Feedback"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.Not_Picked_Up_of_Service_Rating"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.Number_Busy_of_Service_Rating"/>      
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Customer_satisfied_With_service_Rating"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_No_Raise_A_Complaint_Of_service_Rating"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.Wrong_Number"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Service_Rating__Very_Good"/>
+      <class name="PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Good"/>
+        <class name="PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Average"/>
+          <class name="PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Poor"/>
+           <class name="PSf_Static_Report_and_Call_Dispostion.Reshedule_The_Appointment_In_Complaint_Mangemnet"/>
+             <class name="PSf_Static_Report_and_Call_Dispostion.Call_Me_Later_In_Complaint_Mangement"/>
+                   <class name="PSf_Static_Report_and_Call_Dispostion.Number_Busy_in_Complaint_Management"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

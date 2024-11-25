@@ -1,0 +1,1252 @@
+<html>
+<head>
+<title>TestNG:  PSF</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PSF</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>65/17/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 15 15:42:03 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>832 seconds (832709 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Comparison_0f_all_Data()'><b>Comparison_0f_all_Data</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td><div><pre>java.lang.AssertionError: Compare Percent_Promoter_of_workshopWise_With_dayWise expected [0 %] but found [0%]
+	at PSf_Static_Report.Prelimnary_NPS_report.Comparison_0f_all_Data(Prelimnary_NPS_report.java:366)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace231182885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace231182885'><pre>java.lang.AssertionError: Compare Percent_Promoter_of_workshopWise_With_dayWise expected [0 %] but found [0%]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at PSf_Static_Report.Prelimnary_NPS_report.Comparison_0f_all_Data(Prelimnary_NPS_report.java:366)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Click_On_Day_Wise()'><b>Click_On_Day_Wise</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[2]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02d9dd638e0bc5042939e8c6b0745e8f, findElement {using=xpath, value=(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02d9dd638e0bc5042939e8c6b0745e8f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at PSf_Static_Report.PSF_Due_Analysis.Click_On_Day_Wise(PSF_Due_Analysis.java:273)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1648938923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648938923'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[2]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02d9dd638e0bc5042939e8c6b0745e8f, findElement {using=xpath, value=(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02d9dd638e0bc5042939e8c6b0745e8f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at PSf_Static_Report.PSF_Due_Analysis.Click_On_Day_Wise(PSF_Due_Analysis.java:273)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>34</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Click_On_Service_Type_Wise()'><b>Click_On_Service_Type_Wise</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[text()=&quot; Generate &quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at PSf_Static_Report.PSF_Due_Analysis.Click_On_Service_Type_Wise(PSF_Due_Analysis.java:345)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&quot; Generate &quot;]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02d9dd638e0bc5042939e8c6b0745e8f, findElement {using=xpath, value=//*[text()=&quot; Generate &quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02d9dd638e0bc5042939e8c6b0745e8f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace66853567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace66853567'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[text()=&quot; Generate &quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at PSf_Static_Report.PSF_Due_Analysis.Click_On_Service_Type_Wise(PSF_Due_Analysis.java:345)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&quot; Generate &quot;]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02d9dd638e0bc5042939e8c6b0745e8f, findElement {using=xpath, value=//*[text()=&quot; Generate &quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61187/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02d9dd638e0bc5042939e8c6b0745e8f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+</pre></div></td>
+<td>18</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Click_On_Day_Wise()'><b>Click_On_Day_Wise</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Day_Wise Tab In Premilinary_NPS_Report For input string: &quot;0 %&quot;
+	at PSf_Static_Report.Prelimnary_NPS_report.Click_On_Day_Wise(Prelimnary_NPS_report.java:342)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1422883946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1422883946'><pre>java.lang.AssertionError: No Data Found for Day_Wise Tab In Premilinary_NPS_Report For input string: &quot;0 %&quot;
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.Prelimnary_NPS_report.Click_On_Day_Wise(Prelimnary_NPS_report.java:342)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>24</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Click_On_Workshop()'><b>Click_On_Workshop</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Workshop_Wise Tab In Premilinary_NPS_Report For input string: &quot;0%&quot;
+	at PSf_Static_Report.Prelimnary_NPS_report.Click_On_Workshop(Prelimnary_NPS_report.java:227)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1548962651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1548962651'><pre>java.lang.AssertionError: No Data Found for Workshop_Wise Tab In Premilinary_NPS_Report For input string: &quot;0%&quot;
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.Prelimnary_NPS_report.Click_On_Workshop(Prelimnary_NPS_report.java:227)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>27</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Click_On_Workshop()'><b>Click_On_Workshop</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Workshop_Wise In PSF_Due_Analysis : 0
+	at PSf_Static_Report.PSF_Due_Analysis.Click_On_Workshop(PSF_Due_Analysis.java:246)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace653648989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace653648989'><pre>java.lang.AssertionError: No Data Found for Workshop_Wise In PSF_Due_Analysis : 0
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.PSF_Due_Analysis.Click_On_Workshop(PSF_Due_Analysis.java:246)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>25</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Comparison_0f_all_Data()'><b>Comparison_0f_all_Data</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td><div><pre>java.lang.AssertionError: Compare Total_PSF_Due_of_workshopWise_With_dayWise expected [null] but found [0]
+	at PSf_Static_Report.PSF_Calibration_Report.Comparison_0f_all_Data(PSF_Calibration_Report.java:460)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1809269661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1809269661'><pre>java.lang.AssertionError: Compare Total_PSF_Due_of_workshopWise_With_dayWise expected [null] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at PSf_Static_Report.PSF_Calibration_Report.Comparison_0f_all_Data(PSF_Calibration_Report.java:460)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Click_On_Workshop()'><b>Click_On_Workshop</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Workshop_Wise In PRF_Report : 0
+	at PSf_Static_Report.PRF_Report.Click_On_Workshop(PRF_Report.java:229)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1804292128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1804292128'><pre>java.lang.AssertionError: No Data Found for Workshop_Wise In PRF_Report : 0
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.PRF_Report.Click_On_Workshop(PRF_Report.java:229)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>26</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Click_On_Service_Type_Wise()'><b>Click_On_Service_Type_Wise</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3829d78a238eaed5e8283bf28e7183e6, findElement {using=xpath, value=(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61056/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3829d78a238eaed5e8283bf28e7183e6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at PSf_Static_Report.PSF_Calibration_Report.Click_On_Service_Type_Wise(PSF_Calibration_Report.java:357)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1977656652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1977656652'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3829d78a238eaed5e8283bf28e7183e6, findElement {using=xpath, value=(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61056/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3829d78a238eaed5e8283bf28e7183e6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at PSf_Static_Report.PSF_Calibration_Report.Click_On_Service_Type_Wise(PSF_Calibration_Report.java:357)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>34</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Click_On_Service_Type_Wise()'><b>Click_On_Service_Type_Wise</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Service_Type_Wise Tab In Premilinary_NPS_Report For input string: &quot;0 %&quot;
+	at PSf_Static_Report.Prelimnary_NPS_report.Click_On_Service_Type_Wise(Prelimnary_NPS_report.java:284)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265052195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265052195'><pre>java.lang.AssertionError: No Data Found for Service_Type_Wise Tab In Premilinary_NPS_Report For input string: &quot;0 %&quot;
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.Prelimnary_NPS_report.Click_On_Service_Type_Wise(Prelimnary_NPS_report.java:284)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>24</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Click_On_Service_Type_Wise()'><b>Click_On_Service_Type_Wise</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Service_Type_Wise In PRF_Report : 0
+	at PSf_Static_Report.PRF_Report.Click_On_Service_Type_Wise(PRF_Report.java:385)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213626151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1213626151'><pre>java.lang.AssertionError: No Data Found for Service_Type_Wise In PRF_Report : 0
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.PRF_Report.Click_On_Service_Type_Wise(PRF_Report.java:385)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>22</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Comparison_0f_all_Data()'><b>Comparison_0f_all_Data</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td><div><pre>java.lang.AssertionError: Compare Total_Psf_Due_of_workshopWise_With_dayWise expected [null] but found [0]
+	at PSf_Static_Report.PSF_Due_Analysis.Comparison_0f_all_Data(PSF_Due_Analysis.java:437)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace242945004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace242945004'><pre>java.lang.AssertionError: Compare Total_Psf_Due_of_workshopWise_With_dayWise expected [null] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at PSf_Static_Report.PSF_Due_Analysis.Comparison_0f_all_Data(PSF_Due_Analysis.java:437)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Click_On_Workshop()'><b>Click_On_Workshop</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Workshop_Wise In PSF_Calibration_Reoport : 0
+	at PSf_Static_Report.PSF_Calibration_Report.Click_On_Workshop(PSF_Calibration_Report.java:241)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace873226166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace873226166'><pre>java.lang.AssertionError: No Data Found for Workshop_Wise In PSF_Calibration_Reoport : 0
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.PSF_Calibration_Report.Click_On_Workshop(PSF_Calibration_Report.java:241)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>26</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Click_On_Day_Wise()'><b>Click_On_Day_Wise</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td><div><pre>java.lang.AssertionError: No Data Found for Day_Wise In PRF_Report : 0
+	at PSf_Static_Report.PRF_Report.Click_On_Day_Wise(PRF_Report.java:308)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131837504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131837504'><pre>java.lang.AssertionError: No Data Found for Day_Wise In PRF_Report : 0
+	at org.testng.Assert.fail(Assert.java:99)
+	at PSf_Static_Report.PRF_Report.Click_On_Day_Wise(PRF_Report.java:308)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>22</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Click_On_Day_Wise()'><b>Click_On_Day_Wise</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3829d78a238eaed5e8283bf28e7183e6, findElement {using=xpath, value=(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61056/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3829d78a238eaed5e8283bf28e7183e6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at PSf_Static_Report.PSF_Calibration_Report.Click_On_Day_Wise(PSF_Calibration_Report.java:268)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace236275784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace236275784'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]&quot;}
+  (Session info: chrome=131.0.6778.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3829d78a238eaed5e8283bf28e7183e6, findElement {using=xpath, value=(//tr[td[contains(., &apos;Total&apos;)]])[1]/td[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61056/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3829d78a238eaed5e8283bf28e7183e6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at PSf_Static_Report.PSF_Calibration_Report.Click_On_Day_Wise(PSF_Calibration_Report.java:268)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>34</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Comparison_0f_all_Data()'><b>Comparison_0f_all_Data</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td><div><pre>java.lang.AssertionError: Compare Complaints_closed_Percent_of_workshopWise_With_Service_TypeWise expected [0 %] but found [0%]
+	at PSf_Static_Report.PRF_Report.Comparison_0f_all_Data(PRF_Report.java:423)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace630359980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace630359980'><pre>java.lang.AssertionError: Compare Complaints_closed_Percent_of_workshopWise_With_Service_TypeWise expected [0 %] but found [0%]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at PSf_Static_Report.PRF_Report.Comparison_0f_all_Data(PRF_Report.java:423)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Comparison_0f_all_Data()'><b>Comparison_0f_all_Data</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td><div><pre>java.lang.AssertionError: Compare Psf_Calibration_done_of_workshopWise_With_Service_TypeWise expected [null] but found [12]
+	at PSf_Static_Report.PSF_Last_Attempt_Report.Comparison_0f_all_Data(PSF_Last_Attempt_Report.java:375)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1685820260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1685820260'><pre>java.lang.AssertionError: Compare Psf_Calibration_done_of_workshopWise_With_Service_TypeWise expected [null] but found [12]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at PSf_Static_Report.PSF_Last_Attempt_Report.Comparison_0f_all_Data(PSF_Last_Attempt_Report.java:375)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Click_On_PSF()'><b>Click_On_PSF</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>24</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Click_On_PSF()'><b>Click_On_PSF</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>44</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Captcha()'><b>Captcha</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Click_On_PSF()'><b>Click_On_PSF</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>28</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Captcha()'><b>Captcha</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.SUBMIT_Button()'><b>SUBMIT_Button</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Click_On_PRF_Report()'><b>Click_On_PRF_Report</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>5</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Click_On_Static_Reports()'><b>Click_On_Static_Reports</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Password()'><b>Password</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Click_On_Workshop()'><b>Click_On_Workshop</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>3</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Captcha()'><b>Captcha</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Captcha()'><b>Captcha</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Username()'><b>Username</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Username()'><b>Username</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Click_On_PSF_Calibration_Report()'><b>Click_On_PSF_Calibration_Report</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>5</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Password()'><b>Password</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Remove_PouP()'><b>Remove_PouP</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Remove_PouP()'><b>Remove_PouP</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Click_On_Static_Reports()'><b>Click_On_Static_Reports</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Click_On_Static_Reports()'><b>Click_On_Static_Reports</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Click_On_Complaint_Report()'><b>Click_On_Complaint_Report</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>5</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Click_On_Static_Reports()'><b>Click_On_Static_Reports</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Click_On_Service_Type_Wise()'><b>Click_On_Service_Type_Wise</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>21</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.SUBMIT_Button()'><b>SUBMIT_Button</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.SUBMIT_Button()'><b>SUBMIT_Button</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Remove_PouP()'><b>Remove_PouP</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Captcha()'><b>Captcha</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Click_On_PSF_Due_Analysis_Report()'><b>Click_On_PSF_Due_Analysis_Report</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>3</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.SUBMIT_Button()'><b>SUBMIT_Button</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Remove_PouP()'><b>Remove_PouP</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Comparison_0f_all_Data()'><b>Comparison_0f_all_Data</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>0</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Username()'><b>Username</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.SUBMIT_Button()'><b>SUBMIT_Button</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Remove_PouP()'><b>Remove_PouP</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Click_On_DayWise()'><b>Click_On_DayWise</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>21</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Password()'><b>Password</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Username()'><b>Username</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Password()'><b>Password</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Data_Check_Of_Allocation_Rule_Log()'><b>Data_Check_Of_Allocation_Rule_Log</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>0</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Remove_PouP()'><b>Remove_PouP</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Click_On_Service_Type_Wise()'><b>Click_On_Service_Type_Wise</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>22</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Click_On_PSF()'><b>Click_On_PSF</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>22</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Password()'><b>Password</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Click_On_PSF()'><b>Click_On_PSF</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>46</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Username()'><b>Username</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Click_On_Static_Reports()'><b>Click_On_Static_Reports</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Username()'><b>Username</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Captcha()'><b>Captcha</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.SUBMIT_Button()'><b>SUBMIT_Button</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Remove_PouP()'><b>Remove_PouP</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Click_On_Day_Wise()'><b>Click_On_Day_Wise</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>22</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Click_On_Static_Reports()'><b>Click_On_Static_Reports</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.Allocation_Rule_Log.Click_On_Allocation_Rule_Log()'><b>Click_On_Allocation_Rule_Log</b><br>Test class: PSf_Static_Report.Allocation_Rule_Log</td>
+<td></td>
+<td>5</td>
+<td>PSf_Static_Report.Allocation_Rule_Log@2657d4dd</td></tr>
+<tr>
+<td title='PSf_Static_Report.PRF_Report.Captcha()'><b>Captcha</b><br>Test class: PSf_Static_Report.PRF_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PRF_Report@7139992f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.Click_On_PSF()'><b>Click_On_PSF</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>23</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Username()'><b>Username</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Click_On_Workshop()'><b>Click_On_Workshop</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>22</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Complaint_Report.Password()'><b>Password</b><br>Test class: PSf_Static_Report.Complaint_Report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Complaint_Report@5340477f</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Calibration_Report.SUBMIT_Button()'><b>SUBMIT_Button</b><br>Test class: PSf_Static_Report.PSF_Calibration_Report</td>
+<td></td>
+<td>2</td>
+<td>PSf_Static_Report.PSF_Calibration_Report@387a8303</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Click_On_Last_Attempt_Report()'><b>Click_On_Last_Attempt_Report</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>3</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Last_Attempt_Report.Click_On_Generate()'><b>Click_On_Generate</b><br>Test class: PSf_Static_Report.PSF_Last_Attempt_Report</td>
+<td></td>
+<td>16</td>
+<td>PSf_Static_Report.PSF_Last_Attempt_Report@47caedad</td></tr>
+<tr>
+<td title='PSf_Static_Report.PSF_Due_Analysis.Password()'><b>Password</b><br>Test class: PSf_Static_Report.PSF_Due_Analysis</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.PSF_Due_Analysis@28cda624</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Click_On_Preliminary_NPS_Report()'><b>Click_On_Preliminary_NPS_Report</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>5</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Click_On_PSF()'><b>Click_On_PSF</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>44</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+<tr>
+<td title='PSf_Static_Report.Prelimnary_NPS_report.Click_On_Static_Reports()'><b>Click_On_Static_Reports</b><br>Test class: PSf_Static_Report.Prelimnary_NPS_report</td>
+<td></td>
+<td>1</td>
+<td>PSf_Static_Report.Prelimnary_NPS_report@210ab13f</td></tr>
+</table><p>
+</body>
+</html>

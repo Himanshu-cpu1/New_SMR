@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CCM_Reports">
+	<listeners>
+    <listener class-name="MergeCCM_Reports.ExtentReportListener"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="MergeCCM_Reports.SMR_due_Datewise"/>
+       <class name="MergeCCM_Reports.HperLocal_Status"/>
+      <class name="MergeCCM_Reports.SMR_Bot"/>
+       <class name="MergeCCM_Reports.Booking_Conversio_Report"/>
+         <class name="MergeCCM_Reports.Ew_CCp_Bot_Lead_Conversion"/>
+      
+         <class name="MergeCCM_Reports.Smart_Eye_Lead_Performance"/>
+      <class name="MergeCCM_Reports.Cross_sell_Intrest_Log"/>
+      <class name="MergeCCM_Reports.Cross_sell_conversion"/>
+       <class name="MergeCCM_Reports.DueVsDone"/>
+       
+        <class name="MergeCCM_Reports.Smart_Eye_Overall_Performace"/>
+        <class name="MergeCCM_Reports.Marketing_Campaign"/>
+         <class name="MergeCCM_Reports.Auto_Dialer_report"/>
+       <class name="MergeCCM_Reports.UserList"/>
+       <class name="MergeCCM_Reports.Website_Lead_report"/>
+             
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

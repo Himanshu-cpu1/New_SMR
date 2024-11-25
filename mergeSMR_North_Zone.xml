@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="smr">
-  <test  name="Test">
+<suite name="SMR_Report">
+	<listeners>
+    <listener class-name="mergeSMR_North_Zone.ExtentReportListener"/>
+  </listeners>
+  <test name="SMR">
     <classes>
       <class name="mergeSMR_North_Zone.SMR_Due_Date_Wise"/>
             <class name="mergeSMR_North_Zone.SMR_Bot_status"/>
             <class name="mergeSMR_North_Zone.HyperLocal_Status_Report_SMR"/>
             <class name="mergeSMR_North_Zone.BookingConversion_Report_SMR"/>
+            
             <class name="mergeSMR_North_Zone.Last_Attempt_Report_SMR"/>
+           
             <class name="mergeSMR_North_Zone.EW_CCP_BOTLeadConversion_Report"/>
             <class name="mergeSMR_North_Zone.Smart_Eye_lead_performace"/>
             <class name="mergeSMR_North_Zone.Cross_sell_Intrest_cost"/>
             <class name="mergeSMR_North_Zone.CrossSellConversion_Report_SMR"/>
+            
             <class name="mergeSMR_North_Zone.Dealer_subscription"/>
             <class name="mergeSMR_North_Zone.DueVsDone_Report_SMR"/>          
+            
             <class name="mergeSMR_North_Zone.Service_Due_Analysis_Report"/>
             <class name="mergeSMR_North_Zone.SmartEyeOverAllPerformance"/>
+            
             <class name="mergeSMR_North_Zone.SMRE_Performance_Report_SMR"/>
+           
             <class name="mergeSMR_North_Zone.UserList_SMR_Report"/>
             <class name="mergeSMR_North_Zone.Website_Lead_Report"/>
              <class name="mergeSMR_North_Zone.DataAvailability_Report_SMR"/>
               <class name="mergeSMR_North_Zone.AutoDialer_SMR_Report"/>
               <class name="mergeSMR_North_Zone.MarketingCampaign_Report_SMR"/>
+              <class name="mergeSMR_North_Zone.Prelimnary_NPS_report"/>
+              
               
     </classes>
   </test> <!-- Test -->
