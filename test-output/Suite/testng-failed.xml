@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match">
+        <methods>
+          <include name="Match_Campaign_Name4"/>
+          <include name="Match_Campaign_Name3"/>
+          <include name="Match_Campaign_Name5"/>
+          <include name="Match_Campaign_Name2"/>
+          <include name="Match_Campaign_Name1"/>
+          <include name="Admin_Reports"/>
+          <include name="setup"/>
+          <include name="TearsDown"/>
+        </methods>
+      </class> <!-- Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match -->
+      <class name="Excel_Sheet_Data.Import_Data_In_CCM">
+        <methods>
+          <include name="TearsDown"/>
+          <include name="setup"/>
+          <include name="Select_All_Filter2"/>
+          <include name="Admin_Reports"/>
+        </methods>
+      </class> <!-- Excel_Sheet_Data.Import_Data_In_CCM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

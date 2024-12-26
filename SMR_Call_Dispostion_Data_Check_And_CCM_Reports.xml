@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports">
+	<listeners>
+    <listener class-name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.ExtentReportListener"/>
+  </listeners>
+  <test name="SMR">
+    <classes>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Low_Mileage"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Smart_Eye_Lead_Performance_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_HperLocal_Status_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.SMR_Dashboard_Data_Check"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Cross_sell_Intrest_Log_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Marketing_Campaign_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.All_fillter_check2"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Vehicle_Sold_To_New_Owner"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Vehicle_Scraped"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Website_Lead_report"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_SMR_Bot_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Smart_Eye_Overall_Performace_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Booking_Conversio_Report"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Book_An_Appointment"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_DueVsDone_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Ew_CCp_Bot_Lead_Conversion_Reports"/>
+    
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Service_Already_Done"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.My_Digital_Leads_Data_Check_And_call_Dispostion_OF_Marketing"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.BodyShop_All_tab_Data_Check_and_Call_Dispostion"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Dissatisfied_with_Service"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Call_Not_Picked_Up_NO"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Cross_sell_conversion_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Auto_Dialer_report"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Transfer_To_New_Location"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.All_TabData_Check"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Call_Me_Later"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_UserList_Reports"/>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_SMR_due_DateWise_Reports"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

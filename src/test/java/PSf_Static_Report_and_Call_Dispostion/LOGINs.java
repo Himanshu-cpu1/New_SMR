@@ -35,7 +35,7 @@ public class LOGINs {
 
 		@Test(priority = 1)
 		public void Username() throws InterruptedException {
-			wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 			WebElement Username = wait
 					.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[id=\"mat-input-0\"]")));
 			Username.sendKeys("081001CCM00001");
@@ -46,7 +46,7 @@ public class LOGINs {
 
 		@Test(priority = 2)
 		public void Password() throws InterruptedException {
-			wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 			WebElement password = wait
 					.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[id=\"mat-input-1\"]")));
 			password.sendKeys("Maruti@123");
@@ -62,7 +62,7 @@ public class LOGINs {
 
 		@Test(priority = 3)
 		public void Captcha() throws InterruptedException {
-			wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 			// .................Enter The Captcha
 			// ..................................................................
@@ -89,7 +89,7 @@ public class LOGINs {
 
 	@Test(priority = 5)
 	public void Click_On_PSF() throws InterruptedException {
-
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		WebElement PopUp = driver.findElement(By.xpath("(//*[@title=\"Close message\"])"));
 		PopUp.click();
 		Thread.sleep(1000);
@@ -109,7 +109,7 @@ public class LOGINs {
 
 		WebElement PopUp = driver.findElement(By.xpath("(//*[@title=\"Close message\"])"));
 		PopUp.click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 
 	}
 }

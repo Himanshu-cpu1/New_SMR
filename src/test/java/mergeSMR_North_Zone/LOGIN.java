@@ -41,7 +41,7 @@ public class LOGIN {
         WebElement Username = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[id=\"mat-input-0\"]")));
         Username.sendKeys("North2RSM00001");
 
-        Thread.sleep(2000);
+        Thread.sleep(500);
     }
 
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -52,7 +52,7 @@ public class LOGIN {
         WebElement password = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[id=\"mat-input-1\"]")));
         password.sendKeys("MarutiCNM#@123");
                
-          Thread.sleep(3000);
+          Thread.sleep(500);
 	    	    
         WebElement login_Button = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[type=\"submit\"]")));
         login_Button.click();
@@ -71,7 +71,7 @@ public class LOGIN {
 		String S1 = Image.getAttribute("value");
 		System.out.println("captcha ::"+S1);
 					
-	    Thread.sleep(3000);
+	    Thread.sleep(2000);
 	
         WebElement captcha_field = driver.findElement(By.cssSelector("[placeholder=\"Enter the captcha..\"]"));
 	    captcha_field.sendKeys(S1);
@@ -98,7 +98,7 @@ public class LOGIN {
 
  		WebElement PopUp = driver.findElement(By.xpath("(//*[@title=\"Close message\"])"));
  		PopUp.click();
- 		Thread.sleep(1000);
+ 		Thread.sleep(500);
 
  	}
  

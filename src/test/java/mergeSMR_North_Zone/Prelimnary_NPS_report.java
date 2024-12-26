@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Prelimnary_NPS_report  {
+public class Prelimnary_NPS_report extends LOGIN  {
 	
 	public static WebDriver driver;
 	public WebDriverWait wait;
@@ -40,7 +40,7 @@ public class Prelimnary_NPS_report  {
      @SuppressWarnings("static-access")
      @BeforeClass
      	public void SMR() throws InterruptedException {
-     	 this.driver=MarketingCampaign_Report_SMR.driver;	
+     	 this.driver=LOGIN.driver;	
      	 // Initialize WebDriverWait with a timeout of 10 seconds using Duration
          this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
      	}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [User_Admin_Reports]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="USER_Admin_Reports.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="SMR_Admin(failed)">
+    <classes>
+      <class name="USER_Admin_Reports.User_SMR_Bot_Status_reports">
+        <methods>
+          <include name="Check_Service_Type_Wise"/>
+          <include name="setup"/>
+          <include name="Comparison_Of_All_Tab_Text"/>
+          <include name="Check_Data_Workshop_Wise"/>
+          <include name="tearDown"/>
+          <include name="Check_Data_Day_Wise"/>
+          <include name="Admin_Reports"/>
+        </methods>
+      </class> <!-- USER_Admin_Reports.User_SMR_Bot_Status_reports -->
+      <class name="USER_Admin_Reports.Dialer_Call_Analysis">
+        <methods>
+          <include name="Verify_Dialer_Call_Analysis_Data"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="Admin_Reports"/>
+        </methods>
+      </class> <!-- USER_Admin_Reports.Dialer_Call_Analysis -->
+      <class name="USER_Admin_Reports.Smart_Eye_Overall_Performance">
+        <methods>
+          <include name="Admin_Reports"/>
+          <include name="setup"/>
+          <include name="Comparison_Of_All_Tab_Text"/>
+          <include name="tearDown"/>
+          <include name="Check_Data__Of_Zone_And_Region_Wise"/>
+        </methods>
+      </class> <!-- USER_Admin_Reports.Smart_Eye_Overall_Performance -->
+      <class name="USER_Admin_Reports.Marketing_campign">
+        <methods>
+          <include name="Check_Data__Of_Dealer_parent_Group_Wise"/>
+          <include name="setup"/>
+          <include name="Admin_Reports"/>
+          <include name="tearDown"/>
+          <include name="Check_Data__Of_Workshop_Wise"/>
+          <include name="Comparison_Of_All_Tab_Text"/>
+        </methods>
+      </class> <!-- USER_Admin_Reports.Marketing_campign -->
+    </classes>
+  </test> <!-- SMR_Admin(failed) -->
+</suite> <!-- Failed suite [User_Admin_Reports] -->

@@ -1,37 +1,392 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="25" passed="19" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-25T18:26:45 IST" name="Default suite" finished-at="2024-11-25T18:27:22 IST" duration-ms="36501">
+  <suite started-at="2024-12-26T17:35:24 IST" name="Excel_Sheet_Data match" finished-at="2024-12-26T17:36:53 IST" duration-ms="89355">
     <groups>
     </groups>
-    <test started-at="2024-11-25T18:26:45 IST" name="Default test" finished-at="2024-11-25T18:27:22 IST" duration-ms="36501">
-      <class name="mergeSMR_North_Zone.LOGIN">
-        <test-method is-config="true" signature="setup()[pri:0, instance:mergeSMR_North_Zone.LOGIN@4efbca5a]" started-at="2024-11-25T18:26:45 IST" name="setup" finished-at="2024-11-25T18:26:55 IST" duration-ms="10009" status="PASS">
+    <test started-at="2024-12-26T17:35:24 IST" name="Excel_Sheet" finished-at="2024-12-26T17:36:53 IST" duration-ms="89355">
+      <class name="Excel_Sheet_Data.Import_Data_In_CCM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:24 IST" name="setup" finished-at="2024-12-26T17:35:29 IST" duration-ms="5675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Username()[pri:1, instance:mergeSMR_North_Zone.LOGIN@4efbca5a]" started-at="2024-11-25T18:26:55 IST" name="Username" finished-at="2024-11-25T18:26:58 IST" duration-ms="2452" status="PASS">
+        <test-method is-config="true" signature="Admin_Reports()[pri:0, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:29 IST" name="Admin_Reports" finished-at="2024-12-26T17:35:29 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Admin_Reports -->
+        <test-method signature="Username()[pri:1, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:29 IST" name="Username" finished-at="2024-12-26T17:35:31 IST" duration-ms="1020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Username -->
-        <test-method signature="Password()[pri:2, instance:mergeSMR_North_Zone.LOGIN@4efbca5a]" started-at="2024-11-25T18:26:58 IST" name="Password" finished-at="2024-11-25T18:27:01 IST" duration-ms="3337" status="PASS">
+        <test-method signature="Password()[pri:2, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:31 IST" name="Password" finished-at="2024-12-26T17:35:32 IST" duration-ms="1043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Password -->
-        <test-method signature="Captcha()[pri:3, instance:mergeSMR_North_Zone.LOGIN@4efbca5a]" started-at="2024-11-25T18:27:01 IST" name="Captcha" finished-at="2024-11-25T18:27:04 IST" duration-ms="3197" status="PASS">
+        <test-method signature="Captcha()[pri:3, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:32 IST" name="Captcha" finished-at="2024-12-26T17:35:33 IST" duration-ms="1264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Captcha -->
-        <test-method signature="SUBMIT_Button()[pri:4, instance:mergeSMR_North_Zone.LOGIN@4efbca5a]" started-at="2024-11-25T18:27:04 IST" name="SUBMIT_Button" finished-at="2024-11-25T18:27:20 IST" duration-ms="16243" status="PASS">
+        <test-method signature="SUBMIT_Button()[pri:4, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:33 IST" name="SUBMIT_Button" finished-at="2024-12-26T17:35:37 IST" duration-ms="3710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SUBMIT_Button -->
-        <test-method signature="Remove_PouP()[pri:5, instance:mergeSMR_North_Zone.LOGIN@4efbca5a]" started-at="2024-11-25T18:27:20 IST" name="Remove_PouP" finished-at="2024-11-25T18:27:22 IST" duration-ms="1156" status="PASS">
+        <test-method signature="Remove_PouP()[pri:5, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:37 IST" name="Remove_PouP" finished-at="2024-12-26T17:35:37 IST" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Remove_PouP -->
-      </class> <!-- mergeSMR_North_Zone.LOGIN -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="Click_On_Import_Data()[pri:6, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:37 IST" name="Click_On_Import_Data" finished-at="2024-12-26T17:35:40 IST" duration-ms="2735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_Import_Data -->
+        <test-method signature="Click_On_Choose_File()[pri:7, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:40 IST" name="Click_On_Choose_File" finished-at="2024-12-26T17:35:40 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_Choose_File -->
+        <test-method signature="Upload_file()[pri:8, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:40 IST" name="Upload_file" finished-at="2024-12-26T17:35:44 IST" duration-ms="3341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Upload_file -->
+        <test-method signature="Click_On_Next()[pri:9, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:44 IST" name="Click_On_Next" finished-at="2024-12-26T17:35:49 IST" duration-ms="5080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_Next -->
+        <test-method signature="Match_Data_of_Excel()[pri:10, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:49 IST" name="Match_Data_of_Excel" finished-at="2024-12-26T17:35:51 IST" duration-ms="2351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Match_Data_of_Excel -->
+        <test-method signature="Select_All_Customer()[pri:11, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:51 IST" name="Select_All_Customer" finished-at="2024-12-26T17:35:51 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_All_Customer -->
+        <test-method signature="Select_All_Filter2()[pri:12, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:35:51 IST" name="Select_All_Filter2" finished-at="2024-12-26T17:36:10 IST" duration-ms="18676" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(), 'Sub-campaign already exists')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52664/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3b10da1a9ba3de45a20309f299cd9c6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(), 'Sub-campaign already exists')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52664/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3b10da1a9ba3de45a20309f299cd9c6
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Excel_Sheet_Data.Import_Data_In_CCM.Select_All_Filter2(Import_Data_In_CCM.java:184)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_All_Filter2 -->
+        <test-method signature="Remove_Data_Allocation()[pri:13, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:36:10 IST" name="Remove_Data_Allocation" finished-at="2024-12-26T17:36:11 IST" duration-ms="1230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Remove_Data_Allocation -->
+        <test-method is-config="true" signature="TearsDown()[pri:0, instance:Excel_Sheet_Data.Import_Data_In_CCM@d23e042]" started-at="2024-12-26T17:36:11 IST" name="TearsDown" finished-at="2024-12-26T17:36:12 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearsDown -->
+      </class> <!-- Excel_Sheet_Data.Import_Data_In_CCM -->
+      <class name="Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:12 IST" name="setup" finished-at="2024-12-26T17:36:16 IST" duration-ms="4311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Admin_Reports()[pri:0, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:16 IST" name="Admin_Reports" finished-at="2024-12-26T17:36:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Admin_Reports -->
+        <test-method signature="Username()[pri:1, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:16 IST" name="Username" finished-at="2024-12-26T17:36:17 IST" duration-ms="959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Username -->
+        <test-method signature="Password()[pri:2, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:17 IST" name="Password" finished-at="2024-12-26T17:36:18 IST" duration-ms="1097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Password -->
+        <test-method signature="Captcha()[pri:3, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:18 IST" name="Captcha" finished-at="2024-12-26T17:36:19 IST" duration-ms="1200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Captcha -->
+        <test-method signature="SUBMIT_Button()[pri:4, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:19 IST" name="SUBMIT_Button" finished-at="2024-12-26T17:36:20 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SUBMIT_Button -->
+        <test-method signature="Remove_PouP()[pri:5, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:20 IST" name="Remove_PouP" finished-at="2024-12-26T17:36:20 IST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Remove_PouP -->
+        <test-method signature="Click_On_My_Leads()[pri:6, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:20 IST" name="Click_On_My_Leads" finished-at="2024-12-26T17:36:46 IST" duration-ms="25443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_My_Leads -->
+        <test-method signature="Click_On_Search()[pri:7, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:46 IST" name="Click_On_Search" finished-at="2024-12-26T17:36:46 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_Search -->
+        <test-method signature="Match_Campaign_Name1()[pri:8, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:46 IST" name="Match_Campaign_Name1" finished-at="2024-12-26T17:36:47 IST" duration-ms="1509" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Campaign name are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Campaign name are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match.Match_Campaign_Name1(Login_Anamika_ID_For_Excel_Data_Match.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Match_Campaign_Name1 -->
+        <test-method signature="Match_Campaign_Name2()[pri:9, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:47 IST" name="Match_Campaign_Name2" finished-at="2024-12-26T17:36:49 IST" duration-ms="1325" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Campaign name2 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Campaign name2 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match.Match_Campaign_Name2(Login_Anamika_ID_For_Excel_Data_Match.java:121)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Match_Campaign_Name2 -->
+        <test-method signature="Match_Campaign_Name3()[pri:10, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:49 IST" name="Match_Campaign_Name3" finished-at="2024-12-26T17:36:50 IST" duration-ms="1335" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Campaign name3 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Campaign name3 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match.Match_Campaign_Name3(Login_Anamika_ID_For_Excel_Data_Match.java:143)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Match_Campaign_Name3 -->
+        <test-method signature="Match_Campaign_Name4()[pri:11, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:50 IST" name="Match_Campaign_Name4" finished-at="2024-12-26T17:36:51 IST" duration-ms="1327" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Campaign name4 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Campaign name4 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match.Match_Campaign_Name4(Login_Anamika_ID_For_Excel_Data_Match.java:164)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Match_Campaign_Name4 -->
+        <test-method signature="Match_Campaign_Name5()[pri:12, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:51 IST" name="Match_Campaign_Name5" finished-at="2024-12-26T17:36:53 IST" duration-ms="1334" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Campaign name5 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Campaign name5 are not availabe of Respected Registration number expected [A-Raj-901] but found [RaJu-989]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match.Match_Campaign_Name5(Login_Anamika_ID_For_Excel_Data_Match.java:185)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Match_Campaign_Name5 -->
+        <test-method is-config="true" signature="TearsDown()[pri:0, instance:Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match@2f953efd]" started-at="2024-12-26T17:36:53 IST" name="TearsDown" finished-at="2024-12-26T17:36:53 IST" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearsDown -->
+      </class> <!-- Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match -->
+    </test> <!-- Excel_Sheet -->
+  </suite> <!-- Excel_Sheet_Data match -->
 </testng-results>

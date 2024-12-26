@@ -6,63 +6,57 @@
   </listeners>
   <test thread-count="5" name="PSF(failed)">
     <classes>
-      <class name="PSf_Static_Report_and_Call_Dispostion.PRF_Report">
+      <class name="PSf_Static_Report_and_Call_Dispostion.Number_Busy_in_Complaint_Management">
         <methods>
-          <include name="Click_On_Service_Type_Wise"/>
-          <include name="Click_On_Day_Wise"/>
-          <include name="Click_On_Workshop"/>
-          <include name="tearDown"/>
-          <include name="Comparison_0f_all_Data"/>
           <include name="SMR"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PRF_Report -->
-      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Due_Analysis">
-        <methods>
-          <include name="Click_On_Day_Wise"/>
-          <include name="Comparison_0f_all_Data"/>
-          <include name="tearDown"/>
-          <include name="PSF"/>
-          <include name="Click_On_Workshop"/>
-          <include name="Click_On_Service_Type_Wise"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Due_Analysis -->
-      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Calibration_Report">
-        <methods>
-          <include name="tearDown"/>
-          <include name="SMR"/>
-          <include name="Click_On_Workshop"/>
-          <include name="Comparison_0f_all_Data"/>
-          <include name="setup"/>
-          <include name="Click_On_Day_Wise"/>
-          <include name="Click_On_Service_Type_Wise"/>
-        </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Calibration_Report -->
-      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Last_Attempt_Report">
-        <methods>
-          <include name="PSF"/>
-          <include name="Comparison_0f_all_Data"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Last_Attempt_Report -->
-      <class name="PSf_Static_Report_and_Call_Dispostion.Number_Busy_of_Service_Rating">
-        <methods>
-          <include name="PSF_Calibration_Due"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="SMR"/>
-        </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Number_Busy_of_Service_Rating -->
-      <class name="PSf_Static_Report_and_Call_Dispostion.Reshedule_The_Appointment_In_Complaint_Mangemnet">
-        <methods>
-          <include name="tearDown"/>
           <include name="Click_On_Reshedule_Appointment"/>
-          <include name="SMR"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Number_Busy_in_Complaint_Management -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Good">
+        <methods>
+          <include name="PSF"/>
+          <include name="Check_Yes_Customer_Is_Satisfied"/>
+          <include name="Check_Call_Dispostion_Service_Rating__Good"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Good -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Customer_satisfied_With_service_Rating">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Check_Call_Dispostion_Service_Rating_Excellent"/>
+          <include name="PSF"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Reshedule_The_Appointment_In_Complaint_Mangemnet -->
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Customer_satisfied_With_service_Rating -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_No_Raise_A_Complaint_Of_service_Rating">
+        <methods>
+          <include name="tearDown"/>
+          <include name="PSF"/>
+          <include name="Customer_Will_Be_Available_In_Closed_Complaints"/>
+          <include name="setup"/>
+          <include name="Check_Call_Dispostion_Service_Rating"/>
+          <include name="Clcik_On_Resolved_Complaint"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_No_Raise_A_Complaint_Of_service_Rating -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Wrong_Number">
+        <methods>
+          <include name="PSF"/>
+          <include name="tearDown"/>
+          <include name="PSF_Calibration_Due"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Wrong_Number -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Not_Intrested_In_Providing_Feedback">
+        <methods>
+          <include name="SMR"/>
+          <include name="tearDown"/>
+          <include name="PSF_Calibration_Due"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Not_Intrested_In_Providing_Feedback -->
       <class name="PSf_Static_Report_and_Call_Dispostion.Psf_All_Fillter_Check">
         <methods>
           <include name="Model_name_Fillter"/>
@@ -74,14 +68,128 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- PSf_Static_Report_and_Call_Dispostion.Psf_All_Fillter_Check -->
-      <class name="PSf_Static_Report_and_Call_Dispostion.Not_Picked_Up_of_Service_Rating">
+      <class name="PSf_Static_Report_and_Call_Dispostion.Complaint_Report">
         <methods>
-          <include name="PSF_Calibration_Due"/>
           <include name="SMR"/>
+          <include name="Click_On_Service_Type_Wise"/>
+          <include name="tearDown"/>
+          <include name="Click_On_Day_Wise"/>
+          <include name="setup"/>
+          <include name="Click_On_Workshop"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Complaint_Report -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.PRF_Report">
+        <methods>
+          <include name="Click_On_Service_Type_Wise"/>
+          <include name="Click_On_Day_Wise"/>
+          <include name="Click_On_Workshop"/>
+          <include name="tearDown"/>
+          <include name="Comparison_0f_all_Data"/>
+          <include name="SMR"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PRF_Report -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Service_Rating__Very_Good">
+        <methods>
+          <include name="Check_Yes_Customer_Is_Satisfied"/>
+          <include name="PSF"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Check_Call_Dispostion_Service_Rating_Very_Good"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Service_Rating__Very_Good -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Prelimnary_NPS_report">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Click_On_Service_Type_Wise"/>
+          <include name="SMR"/>
+          <include name="Click_On_Workshop"/>
+          <include name="setup"/>
+          <include name="Click_On_Day_Wise"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Prelimnary_NPS_report -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Call_Me_Later_In_Complaint_Mangement">
+        <methods>
+          <include name="Click_On_Reshedule_Appointment"/>
+          <include name="SMR"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Call_Me_Later_In_Complaint_Mangement -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Due_Analysis">
+        <methods>
+          <include name="Click_On_Day_Wise"/>
+          <include name="Comparison_0f_all_Data"/>
+          <include name="tearDown"/>
+          <include name="PSF"/>
+          <include name="Click_On_Workshop"/>
+          <include name="Click_On_Service_Type_Wise"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Due_Analysis -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Call_Me_Later">
+        <methods>
+          <include name="PSF"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="CAll_Me_Later"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Call_Me_Later -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Calibration_Report">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SMR"/>
+          <include name="Click_On_Workshop"/>
+          <include name="Comparison_0f_all_Data"/>
+          <include name="setup"/>
+          <include name="Click_On_Day_Wise"/>
+          <include name="Click_On_Service_Type_Wise"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Calibration_Report -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Poor">
+        <methods>
+          <include name="Customer_Will_Be_Available_In_Resolved_Complaints"/>
+          <include name="PSF"/>
+          <include name="Click__On_InProgress_To_Update_Complaint_Status"/>
+          <include name="Upload_file"/>
+          <include name="setup"/>
+          <include name="Check_Call_Dispostion_Service_Rating__Poor"/>
+          <include name="Click_Open_Complaint_Management"/>
+          <include name="tearDown"/>
+          <include name="Click__On_Resolved_Complaints_To_Update_Complaint_Status"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Poor -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Last_Attempt_Report">
+        <methods>
+          <include name="PSF"/>
+          <include name="Click_On_DayWise"/>
+          <include name="Click_On_Workshop"/>
+          <include name="Click_On_Service_Type_Wise"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Not_Picked_Up_of_Service_Rating -->
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Last_Attempt_Report -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Reshedule_The_Appointment_In_Complaint_Mangemnet">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Click_On_Reshedule_Appointment"/>
+          <include name="SMR"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Reshedule_The_Appointment_In_Complaint_Mangemnet -->
+      <class name="PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Average">
+        <methods>
+          <include name="Check_Call_Dispostion_Service_Rating__Average"/>
+          <include name="PSF"/>
+          <include name="Customer_Will_Be_Available_In_Resolved_Complaints"/>
+          <include name="Click_Open_Complaint_Management"/>
+          <include name="Upload_file"/>
+          <include name="Click__On_InProgress_To_Update_Complaint_Status"/>
+          <include name="setup"/>
+          <include name="Click__On_Resolved_Complaints_To_Update_Complaint_Status"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- PSf_Static_Report_and_Call_Dispostion.Psf_Service_Rating_Select_Average -->
     </classes>
   </test> <!-- PSF(failed) -->
 </suite> <!-- Failed suite [PSf_Static_Report_and_Call_Dispostion_And_All_Call_Dispostion] -->

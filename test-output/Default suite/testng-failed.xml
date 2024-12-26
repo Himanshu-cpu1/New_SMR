@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PSf_Static_Report_and_Call_Dispostion.PSF_Last_Attempt_Report">
+      <class name="Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match">
         <methods>
-          <include name="PSF"/>
-          <include name="Comparison_0f_all_Data"/>
+          <include name="Match_Campaign_Name4"/>
+          <include name="Match_Campaign_Name3"/>
+          <include name="Match_Campaign_Name5"/>
+          <include name="Match_Campaign_Name2"/>
+          <include name="Match_Campaign_Name1"/>
+          <include name="Admin_Reports"/>
           <include name="setup"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- PSf_Static_Report_and_Call_Dispostion.PSF_Last_Attempt_Report -->
+      </class> <!-- Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

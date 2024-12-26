@@ -31,6 +31,7 @@
            <class name="PSf_Static_Report_and_Call_Dispostion.Reshedule_The_Appointment_In_Complaint_Mangemnet"/>
              <class name="PSf_Static_Report_and_Call_Dispostion.Call_Me_Later_In_Complaint_Mangement"/>
                    <class name="PSf_Static_Report_and_Call_Dispostion.Number_Busy_in_Complaint_Management"/>
+                   <class name="PSf_Static_Report_and_Call_Dispostion.checkPSF_NPS_data_In_dashboard"/>
 
     </classes>
   </test> <!-- Test -->

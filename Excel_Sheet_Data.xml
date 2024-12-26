@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Excel_Sheet_Data match">
+  	<listeners>
+    <listener class-name="Excel_Sheet_Data.ExtentReportListener"/>
+  </listeners>
+  <test name="Excel_Sheet">
+    <classes>
+      <class name="Excel_Sheet_Data.Import_Data_In_CCM"/>
+      <class name="Excel_Sheet_Data.Login_Anamika_ID_For_Excel_Data_Match"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

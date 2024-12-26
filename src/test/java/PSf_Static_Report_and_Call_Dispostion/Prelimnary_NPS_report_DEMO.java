@@ -47,11 +47,15 @@ public class Prelimnary_NPS_report_DEMO extends LOGINs {
 	  	@Test(priority = 8)
 	  	public void Click_On_Static_Reports() throws InterruptedException {
 	  					  		
-	  		WebElement Static_Reports = wait
-	  			    .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\"Static Report \"]")));
+	  		WebElement maximise_Button = wait
+	  			    .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\" chevron_right \"]")));
+	  		maximise_Button.click();
+	  		Thread.sleep(500);
+	  		WebElement Dashboard = wait
+	  			    .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()=\"Dashboard \"]")));
 	  			// Call the JavaScript Executor method instead of directly clicking
-	  			clickElementUsingJS(driver, Static_Reports);
-	            Thread.sleep(1000);
+	  			clickElementUsingJS(driver, Dashboard);
+	            Thread.sleep(500);
 	  	}
 	  	
 	 // ..............................................................................................................

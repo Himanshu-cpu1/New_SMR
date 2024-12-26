@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="User_Admin_Reports">
+	<listeners>
+    <listener class-name="USER_Admin_Reports.ExtentReportListener"/>
+  </listeners>
+  <test name="SMR_Admin">
+    <classes>
+    
+      
+      <class name="USER_Admin_Reports.Auto_Dialer_report"/>
+   
+      <class name="USER_Admin_Reports.Data_Allocation_Report"/>
+      <class name="USER_Admin_Reports.User_SMR_Bot_Status_reports"/>
+      <class name="USER_Admin_Reports.UserListReports"/>
+      <class name="USER_Admin_Reports.Dialer_Call_Analysis"/>
+      <class name="USER_Admin_Reports.Marketing_campign"/>
+      <class name="USER_Admin_Reports.Smart_Eye_Overall_Performance"/>
+      <class name="USER_Admin_Reports.HyperLocal_Status_Report"/>
+      <class name="USER_Admin_Reports.Dialer_Whattasp_Anlaysis"/>
+      <class name="USER_Admin_Reports.Allocation_rule_log"/>
+      <class name="USER_Admin_Reports.User_SMR_Due_Date_Wise_Reports"/>
+      
+      <class name="USER_Admin_Reports.Admin_User_Ip_Range_Negative_Scenario"/>
+      <class name="USER_Admin_Reports.Validate_Ip_Range"/>
+      <class name="USER_Admin_Reports.Remove_Ip_Restriction_In_Admin"/>
+        <class name="USER_Admin_Reports.Poistive_Scenario_Ip_Restriction"/>
+      
+     
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

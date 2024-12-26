@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SMR_Call_Dispostion_Data_Check_And_CCM_Reports]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="SMR(failed)">
+    <classes>
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Auto_Dialer_report">
+        <methods>
+          <include name="Data_Verification_Day_Wise_Tab"/>
+          <include name="Data_Verification_For_Workshop_Wise_Tab"/>
+          <include name="setup"/>
+          <include name="ccm_Reports"/>
+          <include name="tearDown"/>
+          <include name="Data_Verification_SMRE_Wise_Tab"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Auto_Dialer_report -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Smart_Eye_Lead_Performance_Reports">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Day_Wise"/>
+          <include name="setup"/>
+          <include name="User_Wise"/>
+          <include name="Workshop_Wise"/>
+          <include name="ccm_Reports"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Smart_Eye_Lead_Performance_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.My_Digital_Leads_Data_Check_And_call_Dispostion_OF_Marketing">
+        <methods>
+          <include name="Click_On_CCP_Bot_Lead"/>
+          <include name="tearDown"/>
+          <include name="Click_On_SMR_Bot"/>
+          <include name="ChecK_Call_Dispostion_Of_Dissatisfied_With_Service_In_REFUSE_FOR_SERVICE"/>
+          <include name="ChecK_Call_Dispostion_Of_Vehicle_scraped_In_REFUSE_FOR_SERVICE"/>
+          <include name="Click_On_Website"/>
+          <include name="ChecK_Call_Dispostion_Of_Transfer_To_New_Location_In_REFUSE_FOR_SERVICE"/>
+          <include name="ChecK_Call_Dispostion_On_Marketing_Tab"/>
+          <include name="ChecK_Call_Dispostion_Of_Call_Not_PickUp"/>
+          <include name="ChecK_Call_Dispostion_Of_Vehicel_Sold_To_new_owner"/>
+          <include name="Click_On_EW_Bot_Lead"/>
+          <include name="ChecK_Call_Dispostion_Of_Service_Already_Done_In_REFUSE_FOR_SERVICE"/>
+          <include name="Remove_Apppointment_Schedule"/>
+          <include name="setup"/>
+          <include name="Click_On_HyperLocal_Leads"/>
+          <include name="ChecK_Call_Dispostion_Of_Low_Mileage"/>
+          <include name="ChecK_Call_Dispostion_Of_Call_Me_Later"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.My_Digital_Leads_Data_Check_And_call_Dispostion_OF_Marketing -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Book_An_Appointment">
+        <methods>
+          <include name="Click_On_Call_Dispostion"/>
+          <include name="Click_On_Future_Booking"/>
+          <include name="Click_On_Total_Calls"/>
+          <include name="tearDown"/>
+          <include name="SMR"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Book_An_Appointment -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.All_TabData_Check">
+        <methods>
+          <include name="SMR"/>
+          <include name="Click_On_Reported_Calls"/>
+          <include name="setup"/>
+          <include name="Click_On_Future_Booking"/>
+          <include name="Click_On_Quick_wins"/>
+          <include name="Click_On_Lost_Calls"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.All_TabData_Check -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_DueVsDone_Reports">
+        <methods>
+          <include name="setup"/>
+          <include name="Select_All_Fillter"/>
+          <include name="ccm_Reports"/>
+          <include name="tearDown"/>
+          <include name="Data_Verification_DueVsDone"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_DueVsDone_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_SMR_Bot_Reports">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Service_Type_Wise"/>
+          <include name="WorkShop_Wise"/>
+          <include name="ccm_Reports"/>
+          <include name="Day_Wise"/>
+          <include name="SMRE_Wise"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_SMR_Bot_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Ew_CCp_Bot_Lead_Conversion_Reports">
+        <methods>
+          <include name="Dealer_Parent_Group_Wise_Tab"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="ccm_Reports"/>
+          <include name="Day_Wise_Tab"/>
+          <include name="Workshop_Wise_Tab"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Ew_CCp_Bot_Lead_Conversion_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Vehicle_Scraped">
+        <methods>
+          <include name="SMR"/>
+          <include name="setup"/>
+          <include name="click_On_first_Customer"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Vehicle_Scraped -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_HperLocal_Status_Reports">
+        <methods>
+          <include name="setup"/>
+          <include name="ccm_Reports"/>
+          <include name="tearDown"/>
+          <include name="SMRE_Report"/>
+          <include name="Comparison_0f_all_Data"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_HperLocal_Status_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Cross_sell_Intrest_Log_Reports">
+        <methods>
+          <include name="setup"/>
+          <include name="WorkShop_Wise"/>
+          <include name="Dealer_Parent_Group_Wise"/>
+          <include name="Day_Wise"/>
+          <include name="Service_type_Wise"/>
+          <include name="ccm_Reports"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Cross_sell_Intrest_Log_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_SMR_due_DateWise_Reports">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="SMRE_Wise"/>
+          <include name="Day_Wise"/>
+          <include name="ccm_Reports"/>
+          <include name="Comparison_0f_all_Data"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_SMR_due_DateWise_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Cross_sell_conversion_Reports">
+        <methods>
+          <include name="Day_Wise"/>
+          <include name="setup"/>
+          <include name="ccm_Reports"/>
+          <include name="Service_Type_Wise"/>
+          <include name="Dealer_Parent_Group_Wise"/>
+          <include name="tearDown"/>
+          <include name="Comparison_0f_all_Data"/>
+          <include name="WorkShop_Wise"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Cross_sell_conversion_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.All_fillter_check2">
+        <methods>
+          <include name="SMR"/>
+          <include name="Fuel_Type_Fillters_check"/>
+          <include name="Service_due_Workshop_Filters"/>
+          <include name="removeFilterCheck"/>
+          <include name="Vehicle_Type_Fillters_check"/>
+          <include name="setup"/>
+          <include name="CCP_Filters_check"/>
+          <include name="remove_MI_Active_Fillters_check"/>
+          <include name="Model_Varient_Fillters_check"/>
+          <include name="Corporate_Name_Fillters_check"/>
+          <include name="Customer_tag_Filters"/>
+          <include name="MI_Active_Fillters_check"/>
+          <include name="Loyality_Filters"/>
+          <include name="EW_Filters"/>
+          <include name="remove_Corporate_Name_Fillters_check"/>
+          <include name="tearDown"/>
+          <include name="Model_name_Fillters_check"/>
+          <include name="remove_Service_due_Workshop_Filters"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.All_fillter_check2 -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Marketing_Campaign_Reports">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="SMRE_Wise"/>
+          <include name="ccm_Reports"/>
+          <include name="Day_Wise_Tab"/>
+          <include name="Dealer_Parent_Group_Wise_Tab"/>
+          <include name="WorkShop_Wise_Tab"/>
+          <include name="Comparison_0f_all_Data"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Marketing_Campaign_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Dissatisfied_with_Service">
+        <methods>
+          <include name="SMR"/>
+          <include name="tearDown"/>
+          <include name="click_On_first_Customer"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.REFUSE_FOR_SERVICE_Dissatisfied_with_Service -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Booking_Conversio_Report">
+        <methods>
+          <include name="Dealer_Parent_Group_Wise_Tab"/>
+          <include name="Comparison_0f_all_Data"/>
+          <include name="Workshop_Wise_Tab"/>
+          <include name="setup"/>
+          <include name="ccm_Reports"/>
+          <include name="Day_Wise_Tab"/>
+          <include name="tearDown"/>
+          <include name="ServiceType_Wise_Tab"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Booking_Conversio_Report -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Call_Not_Picked_Up_NO">
+        <methods>
+          <include name="ccm_Reports"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="click_On_first_Customer"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.Call_Not_Picked_Up_NO -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Smart_Eye_Overall_Performace_Reports">
+        <methods>
+          <include name="Comparison_0f_all_Data"/>
+          <include name="Service_Type_Wise_Tab"/>
+          <include name="Workshop_Wise_Tab"/>
+          <include name="setup"/>
+          <include name="Dealer_Parent_Group_Wise_Tab"/>
+          <include name="tearDown"/>
+          <include name="ccm_Reports"/>
+          <include name="Day_Wise_Tab"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.CCM_Smart_Eye_Overall_Performace_Reports -->
+      <class name="SMR_Call_Dispostion_Data_Check_And_CCM_Reports.BodyShop_All_tab_Data_Check_and_Call_Dispostion">
+        <methods>
+          <include name="Click_On_Pending_Booking"/>
+          <include name="Click_On_Lost_Calls"/>
+          <include name="ChecK_Call_Dispostion_Of_Others_In_REFUSE_FOR_Repaire"/>
+          <include name="ChecK_Call_Dispostion_Of_Repaire_Already_Done_In_REFUSE_FOR_SERVICE"/>
+          <include name="Remove_Apppointment_Schedule"/>
+          <include name="tearDown"/>
+          <include name="Click_On_Today_Booking"/>
+          <include name="ChecK_Call_Dispostion_On_Body_Shop_Leads"/>
+          <include name="ChecK_Call_Dispostion_Of_Transfer_To_New_Location_In_REFUSE_FOR_Repair"/>
+          <include name="Click_On_Follow_up_Calls"/>
+          <include name="Click_On_Future_Booking"/>
+          <include name="Click_On_Pending_Calls"/>
+          <include name="setup"/>
+          <include name="ChecK_Call_Dispostion_Of_Vehicle_scraped_In_REFUSE_FOR_Repaire"/>
+        </methods>
+      </class> <!-- SMR_Call_Dispostion_Data_Check_And_CCM_Reports.BodyShop_All_tab_Data_Check_and_Call_Dispostion -->
+    </classes>
+  </test> <!-- SMR(failed) -->
+</suite> <!-- Failed suite [SMR_Call_Dispostion_Data_Check_And_CCM_Reports] -->
